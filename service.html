@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: rgb(47, 31, 107);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            padding: 5px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .firstsection {
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0;
+        }
+
+        .section-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .project-card {
+            background-color: #071537;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 200px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            margin: 10px;
+            flex: 1;
+            height:80px;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+
+        .project-name-bar {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            font-size: 1rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 8px;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .project-card:hover .project-name-bar {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Manshi Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="porfolio.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact us.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="section-container">
+                <div class="section-title">Languages</div>
+                <div class="row">
+                    <div class="project-card">
+                        <img src="cpp.png" alt="C++">
+                        <div class="project-name-bar">C++</div>
+                    </div>
+                    <div class="project-card">
+                        <img src="java.png" alt="Java">
+                        <div class="project-name-bar">Java</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="project-card">
+                        <img src="c.jpg" alt="C">
+                        <div class="project-name-bar">C</div>
+                    </div>
+                    <div class="project-card">
+                        <img src="python.png" alt="Project 4">
+                        <div class="project-name-bar">python</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-container">
+                <div class="section-title">Frontend</div>
+                <div class="row">
+                    <div class="project-card">
+                        <img src="JS.png" alt="JavaScript">
+                        <div class="project-name-bar">JavaScript</div>
+                    </div>
+                    <div class="project-card">
+                        <img src="html.jpg" alt="HTML">
+                        <div class="project-name-bar">HTML</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="project-card">
+                        <img src="bootstrap.png" alt="Bootstrap">
+                        <div class="project-name-bar">Bootstrap</div>
+                    </div>
+                    <div class="project-card">
+                        <img src="react.png" alt="React">
+                        <div class="project-name-bar">React</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-container">
+                <div class="section-title">Backend</div>
+                <div class="row">
+                    <div class="project-card">
+                        <img src="php.png" alt="Project 8">
+                        <div class="project-name-bar">PHP</div>
+                    </div>
+                    <div class="project-card">
+                        <img src="sql.png" alt="Project 9">
+                        <div class="project-name-bar">mysql</div>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="project-card">
+                        <img src="dummy.jpeg" alt="Project 10">
+                        <div class="project-name-bar">Dummy Text 4</div>
+                    </div>
+                    <div class="project-card">
+                        <img src="dummy.jpeg" alt="Project 11">
+                        <div class="project-name-bar">Dummy Text 5</div>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="section-container">
+                <div class="section-title">Tools</div>
+                <div class="row">
+                    <div class="project-card">
+                        <img src="vs.png" alt="Project 12">
+                        <div class="project-name-bar">Visual Studio</div>
+                    </div>
+                    <div class="project-card">
+                        <img src="tableau.png" alt="Project 13">
+                        <div class="project-name-bar">Tableau</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="project-card">
+                        <img src="github.png" alt="Project 14">
+                        <div class="project-name-bar">Github</div>
+                    </div>
+                    <!-- <div class="project-card">
+                        <img src="" alt="Project 15">
+                        <div class="project-name-bar">Dummy Text 9</div>
+                    </div> -->
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>
